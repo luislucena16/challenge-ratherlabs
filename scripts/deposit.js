@@ -6,9 +6,7 @@ const USER_LIQUIDITY_WETH_FUJI = ethers.utils.parseEther("0.05");
 
 async function main() {
   const [user] = await ethers.getSigners();
-  const userAddress = await user.getAddress();
-  console.log("User address:", userAddress);
-  
+
   const { wallet, sushi } = await getContracts();
 
   const tokenToDeposit = USER_INITIAL_TOKEN_BALANCE.mul(2);

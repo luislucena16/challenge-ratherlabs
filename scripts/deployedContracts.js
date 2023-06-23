@@ -11,8 +11,7 @@ const walletAbi =
 async function getContracts() {
   const [deployer, user] = await ethers.getSigners();
 
-  const providerUrl = process.env.FUJI_RPC;
-  const provider = new ethers.providers.JsonRpcProvider(providerUrl); // Obtener el proveedor (provider) de ethers
+  const provider = ethers.provider; // Obtener el proveedor (provider) de ethers
 
   const sushi = new ethers.Contract(
     process.env.SUSHI_ADDRESS_FUJI,
@@ -41,9 +40,7 @@ async function getContracts() {
   const wallet = new ethers.Contract(
     process.env.WALLET_ADDRESS_FUJI,
     walletAbi,
-    provider, // Pasar el proveedor (provider) al contrato wallet
-    deployer,
-    user,
+    provider // Pasar el proveedor (provider) al contrato wallet
   );
 
   return {
@@ -53,8 +50,6 @@ async function getContracts() {
     chef,
     wallet,
     provider, // Agregar el proveedor (provider) al objeto devuelto
-    deployer,
-    user, 
   };
 }
 
