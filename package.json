@@ -6,14 +6,14 @@
     "test": "npx hardhat test",
     "compile": "npx hardhat compile",
     "clean": "npx hardhat clean",
-    "deploy": "npx hardhat run scripts/deploy.js --network fuji",
-    "mint": "npx hardhat run scripts/mint.js --network fuji",
-    "add-liquidity": "npx hardhat run scripts/addLiquidity.js --network fuji",
-    "add-pool": "npx hardhat run scripts/addPool.js --network fuji",
-    "deposit": "npx hardhat run scripts/deposit.js --network fuji",
-    "withdraw": "npx hardhat run scripts/withdraw.js --network fuji",
-    "emergency-withdraw": "npx hardhat run scripts/emergencyWithdraw.js --network fuji",
-    "get-wallet-data": "npx hardhat run scripts/getWalletData.js --network fuji"
+    "deploy": "npx hardhat run scripts/deploy.js --network localhost",
+    "mint": "npx hardhat run scripts/mint.js --network localhost",
+    "add-liquidity": "npx hardhat run scripts/addLiquidity.js --network localhost",
+    "add-pool": "npx hardhat run scripts/addPool.js --network localhost",
+    "deposit": "npx hardhat run scripts/deposit.js --network localhost",
+    "withdraw": "npx hardhat run scripts/withdraw.js --network localhost",
+    "emergency-withdraw": "npx hardhat run scripts/emergencyWithdraw.js --network localhost",
+    "get-wallet-data": "npx hardhat run scripts/getWalletData.js --network localhost"
   },
   "repository": {
     "type": "git",
