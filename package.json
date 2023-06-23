@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/luislucena16/sushi-challenge/issues"
   },
-  "homepage": "https://github.com/luislucena16/sushi-challenge#readme"
+  "homepage": "https://github.com/luislucena16/sushi-challenge#readme",
+  "devDependencies": {
+    "hardhat": "^2.16.0"
+  }
 }
