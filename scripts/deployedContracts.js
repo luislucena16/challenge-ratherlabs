@@ -15,31 +15,31 @@ async function getContracts() {
   const provider = new ethers.providers.JsonRpcProvider(providerUrl); // Obtener el proveedor (provider) de ethers
 
   const sushi = new ethers.Contract(
-    '0xfb7612290F093D4d92d103464EEA64658B3385E2',
+    process.env.SUSHI_ADDRESS_FUJI,
     sushiAbi,
     provider // Pasar el proveedor (provider) al contrato sushi
   );
 
   const router = new ethers.Contract(
-    '0x7F8dF86DA3B2722C3BC43F33f19bB8E1F4542DBA',
+    process.env.ROUTER_ADDRESS_FUJI,
     routerAbi,
     provider // Pasar el proveedor (provider) al contrato router
   );
 
   const pair = new ethers.Contract(
-    '0x1D8B6C97caA0a4896530BcF6a79B424005537C68',
+    process.env.PAIR_ADDRESS_FUJI,
     pairAbi,
     provider // Pasar el proveedor (provider) al contrato pair
   );
 
   const chef = new ethers.Contract(
-    '0x0d1dBf6e60E52c0669781d007820B7A635c7685d',
+    process.env.MASTER_CHEF_ADDRESS_FUJI,
     chefAbi,
     provider // Pasar el proveedor (provider) al contrato chef
   );
 
   const wallet = new ethers.Contract(
-    '0x8598a0def8fc17a6F66b32dBC4D8C9f01b038Ba4',
+    process.env.WALLET_ADDRESS_FUJI,
     walletAbi,
     provider, // Pasar el proveedor (provider) al contrato wallet
     deployer,
