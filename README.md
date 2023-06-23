@@ -30,7 +30,7 @@ Using `npm`
   npm install
 ```
 
-## Local Development
+### Local Development
 
 Write:
 
@@ -44,7 +44,7 @@ npx hardhat node
   npm run compile
 ```
 
-## Deploy contracts
+### Deploy contracts
 
 ```bash
 npm run deploy
