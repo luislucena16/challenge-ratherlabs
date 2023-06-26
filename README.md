@@ -34,7 +34,7 @@ npm install
 
 ### Local Development
 
-Configure your `.env` file and paste this:
+Configure your `.env` file search the RPC node in the link and paste this:
 
 ```bash
 Note: We will use the addresses of the smart contracts deployed on the fuji test network
