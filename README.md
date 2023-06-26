@@ -13,13 +13,13 @@ The interactions with MasterChef and Router are on behalf of the user, so no tok
 #### Clone the project
 
 ```bash
-  git clone https://github.com/luislucena16/sushi-challenge.git
+git clone https://github.com/luislucena16/sushi-challenge.git
 ```
 
 #### Go to the project directory
 
 ```bash
-  cd sushi-challenge
+cd sushi-challenge
 ```
 
 #### Install dependencies
@@ -27,21 +27,34 @@ The interactions with MasterChef and Router are on behalf of the user, so no tok
 Using `npm`
 
 ```bash
-  npm install
+npm install
 ```
+
+
 
 ### Local Development
 
-Write:
+Configure your `.env` file and paste this:
+
+# ADDRESSES
+PAIR_ADDRESS_FUJI=[0x1D8B6C97caA0a4896530BcF6a79B424005537C68](https://testnet.snowtrace.io/address/0x1D8B6C97caA0a4896530BcF6a79B424005537C68)
+SUSHI_ADDRESS_FUJI=[0xfb7612290F093D4d92d103464EEA64658B3385E2](https://testnet.snowtrace.io/address/0xfb7612290F093D4d92d103464EEA64658B3385E2)
+ROUTER_ADDRESS_FUJI=[0x7F8dF86DA3B2722C3BC43F33f19bB8E1F4542DBA](https://testnet.snowtrace.io/address/0x7F8dF86DA3B2722C3BC43F33f19bB8E1F4542DBA)
+MASTER_CHEF_ADDRESS_FUJI=[0x0d1dBf6e60E52c0669781d007820B7A635c7685d](https://testnet.snowtrace.io/address/0x0d1dBf6e60E52c0669781d007820B7A635c7685d)
+WALLET_ADDRESS_FUJI=[0x8598a0def8fc17a6F66b32dBC4D8C9f01b038Ba4](https://testnet.snowtrace.io/address/0x8598a0def8fc17a6F66b32dBC4D8C9f01b038Ba4)
+
+Then use the following command:
 
 ```bash
 npx hardhat node
 ```
 
+Open another terminal window and compile your contracts, run this command:
+
 #### Compile contracts
 
 ```bash
-  npm run compile
+npm run compile
 ```
 
 ### Deploy contracts
@@ -50,10 +63,30 @@ npx hardhat node
 npm run deploy
 ```
 
+```bash
+npm run mint
+```
+
+```bash
+npm run add-liquidity
+```
+
+```bash
+npm run add-pool
+```
+
+```bash
+npm run deposit
+```
+
+```bash
+npm run withdraw
+```
+
 ## Running Tests
 
 To run tests, run the following command
 
 ```bash
-  npm run test
+npm run test
 ```
