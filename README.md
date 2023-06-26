@@ -82,10 +82,24 @@ npm run deposit
 npm run withdraw
 ```
 
+```bash
+npm run emergency-withdraw
+```
+
+```bash
+npm run get-wallet-data
+```
+
 ## Running Tests
 
 To run tests, run the following command
 
 ```bash
 npm run test
+```
+
+## Clean Cache
+
+```bash
+npm run clean
 ```
