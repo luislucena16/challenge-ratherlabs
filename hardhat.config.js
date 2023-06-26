@@ -17,7 +17,6 @@ module.exports = {
     fuji: {
       url: FUJI_RPC,
       accounts: [DEPLOYER_PRIVATE_KEY, USER_PRIVATE_KEY],
-      gasLimit: 1e6,
     },
   },
   solidity: {
