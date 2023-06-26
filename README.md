@@ -36,6 +36,10 @@ npm install
 
 Configure your `.env` file and paste this:
 
+```bash
+Note: We will use the addresses of the smart contracts deployed on the fuji test network
+```
+
 PAIR_ADDRESS_FUJI=[0x1D8B6C97caA0a4896530BcF6a79B424005537C68](https://testnet.snowtrace.io/address/0x1D8B6C97caA0a4896530BcF6a79B424005537C68)
 SUSHI_ADDRESS_FUJI=[0xfb7612290F093D4d92d103464EEA64658B3385E2](https://testnet.snowtrace.io/address/0xfb7612290F093D4d92d103464EEA64658B3385E2)
 ROUTER_ADDRESS_FUJI=[0x7F8dF86DA3B2722C3BC43F33f19bB8E1F4542DBA](https://testnet.snowtrace.io/address/0x7F8dF86DA3B2722C3BC43F33f19bB8E1F4542DBA)
