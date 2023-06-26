@@ -6,7 +6,7 @@ require("dotenv").config();
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
 
-const { DEPLOYER_PRIVATE_KEY, USER_PRIVATE_KEY, FUJI_RPC } = process.env;
+const { FUJI_RPC } = process.env;
 
 module.exports = {
   defaultNetwork: "hardhat",
@@ -16,7 +16,6 @@ module.exports = {
     },
     fuji: {
       url: FUJI_RPC,
-      accounts: [DEPLOYER_PRIVATE_KEY, USER_PRIVATE_KEY],
     },
   },
   solidity: {
